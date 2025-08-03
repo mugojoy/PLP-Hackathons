@@ -3,83 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joy Mugo's Portfolio</title>
+  <meta name="description" content="Portfolio website for Joy Mugo, an aspiring software developer based in Kenya, showcasing skills, education, projects, and contact information.">
+  <meta name="keywords" content="Joy Mugo, Software Developer, Portfolio, HTML, CSS, Python, Kenya">
+  <meta name="author" content="Joy Mugo">
+  <link rel="stylesheet" href="style.css">
+  <title>Joy Mugo | Aspiring Software Developer</title>
 </head>
 <body>
-  <Header>
-    <span>Joy Mugo</span>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Languages</li>
-        <li>Education</li>
-        <li>Interests</li>
-        <li>Projects</li>
-        <li>Contacts</li>
-      </ul>
-    </nav>
-  </Header>
-  <Main>
-    <section>
-      Hello, I'm Joy, a Software Developer.
-      <p>An aspiring developer learning to build websites and functional code. I'm passionate about solving real problems through code and excited to grow in the world of tech.
-      </p>
+  <header>
+    <div class="container">
+      <h1>Joy Mugo</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>Hello, I'm Joy, an aspiring software developer learning to build websites and functional code. I'm passionate about solving real problems through technology and excited to grow in the tech industry.</p>
     </section>
-    <section>
-      Languages
+
+    <section id="languages" aria-labelledby="languages-heading">
+      <h2 id="languages-heading">Programming Languages</h2>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>Python</li>
         <li>SQL</li>
-        <li>Version Control</li>
-      </ul>
-    </section>
-    <section>
-      Education
-      <ul>
-        <li>
-          Bachelor's Degree in Nursing - Kenya Methodist University, 2026
-        </li>
-        <li>
-          Bachelor's Degree in Hospitality and Tourism Management - Kenyatta University, 2021
-        </li>
-        <li>
-          Certificate in Basics of Cyber Security - USAID, 2019
-        </li>
-      </ul> 
-    </section>
-
-    <section>
-      Interests
-      <p>
-        I'm passionate about using technology to solve real-world problems. What excites me most is the ability to create user-friendly, accessible web experiences through clean design and functional development. I’m particularly interested in web development, UI/UX design, and continuously learning new tools and frameworks to stay up to date with industry trends.
-      </p>
-    </section>
-
-    <section>
-      Projects
-      <ul>
-        <li>
-          <a href="">Java Bloom Cafe Website</a>
-        </li>
-        <li>
-          <a href="">Calculator</a>
-        </li>
+        <li>Version Control (Git)</li>
       </ul>
     </section>
 
-    <section>
-      Contact Me
-      <form action="">
-        <label for="Name">Name:</label>
-        <input type="text">
-        <label for="Email">Email:</label>
-        <input type="text">
-        <label for="Message">Message:</label>
-        <input type="text">
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Educational Background</h2>
+      <ul>
+        <li>Bachelor's Degree in Nursing - Kenya Methodist University (2026)</li>
+        <li>Bachelor's Degree in Hospitality and Tourism Management - Kenyatta University (2021)</li>
+        <li>Certificate in Basics of Cyber Security - USAID (2019)</li>
+      </ul>
+    </section>
+
+    <section id="interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Interests</h2>
+      <p>I'm passionate about using technology to solve real-world problems. What excites me most is the ability to create user-friendly, accessible web experiences through clean design and functional development. I’m particularly interested in web development, UI/UX design, and continuously learning new tools and frameworks to stay current with industry trends.</p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Java Bloom Cafe Website</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Basic Calculator</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
       </form>
     </section>
-  </Main>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Joy Mugo. All rights reserved.</p>
+  </footer>
 </body>
 </html>
