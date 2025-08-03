@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio website for Joy Mugo, an aspiring software developer based in Kenya, showcasing skills, education, projects, and contact information.">
   <meta name="keywords" content="Joy Mugo, Software Developer, Portfolio, HTML, CSS, Python, Kenya">
   <meta name="author" content="Joy Mugo">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <title>Joy Mugo | Aspiring Software Developer</title>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>Joy Mugo</h1>
+    <div class="container header-container">
+      <h1 class="logo">Joy Mugo</h1>
       <nav aria-label="Main Navigation">
-        <ul>
+        <ul class="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#languages">Languages</a></li>
           <li><a href="#education">Education</a></li>
@@ -26,64 +27,80 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Hello, I'm Joy 👋</h2>
+        <p>A passionate, aspiring software developer based in Kenya. I love building clean, functional websites and exploring how technology can make life better.</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+      </div>
+      <div class="hero-image">
+        <img src="joy-mugo.jpeg" alt="Portrait of Joy Mugo" />
+      </div>
+    </div>
+  </section>
+
   <main class="container">
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
-      <p>Hello, I'm Joy, an aspiring software developer learning to build websites and functional code. I'm passionate about solving real problems through technology and excited to grow in the tech industry.</p>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m currently learning web development with a focus on building accessible and user-friendly websites. I'm passionate about solving problems using technology and always looking for ways to grow in the tech space.</p>
     </section>
 
-    <section id="languages" aria-labelledby="languages-heading">
-      <h2 id="languages-heading">Programming Languages</h2>
-      <ul>
+    <section id="languages">
+      <h2>Programming Languages</h2>
+      <ul class="skills-list">
         <li>HTML</li>
         <li>CSS</li>
         <li>Python</li>
         <li>SQL</li>
-        <li>Version Control (Git)</li>
+        <li>Git & Version Control</li>
       </ul>
     </section>
 
-    <section id="education" aria-labelledby="education-heading">
-      <h2 id="education-heading">Educational Background</h2>
-      <ul>
-        <li>Bachelor's Degree in Nursing - Kenya Methodist University (2026)</li>
-        <li>Bachelor's Degree in Hospitality and Tourism Management - Kenyatta University (2021)</li>
-        <li>Certificate in Basics of Cyber Security - USAID (2019)</li>
+    <section id="education">
+      <h2>Educational Background</h2>
+      <ul class="edu-list">
+        <li><strong>Bachelor’s in Nursing</strong> - Kenya Methodist University (2026)</li>
+        <li><strong>Bachelor’s in Hospitality & Tourism</strong> - Kenyatta University (2021)</li>
+        <li><strong>Certificate in Cybersecurity Basics</strong> - USAID (2019)</li>
       </ul>
     </section>
 
-    <section id="interests" aria-labelledby="interests-heading">
-      <h2 id="interests-heading">Interests</h2>
-      <p>I'm passionate about using technology to solve real-world problems. What excites me most is the ability to create user-friendly, accessible web experiences through clean design and functional development. I’m particularly interested in web development, UI/UX design, and continuously learning new tools and frameworks to stay current with industry trends.</p>
+    <section id="interests">
+      <h2>Interests</h2>
+      <p>I’m excited about how tech can solve real-world problems. I'm especially interested in front-end development, UI/UX design, and staying current with evolving tools and technologies in web development.</p>
     </section>
 
-    <section id="projects" aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects</h2>
-      <ul>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
         <li><a href="#" target="_blank" rel="noopener noreferrer">Java Bloom Cafe Website</a></li>
         <li><a href="#" target="_blank" rel="noopener noreferrer">Basic Calculator</a></li>
       </ul>
     </section>
 
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact Me</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-        <label for="message">Message:</label>
+        <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Joy Mugo. All rights reserved.</p>
+    <p>&copy; 2025 Joy Mugo. Built with love and curiosity.</p>
   </footer>
+
 </body>
 </html>
