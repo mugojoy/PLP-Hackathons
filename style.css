@@ -109,10 +109,12 @@ header {
 
 .hero-image img {
   width: 280px;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
 
 /* Sections */
 section {
@@ -145,6 +147,48 @@ section h2 {
   color: #004999;
   border-bottom: 1px solid #004999;
 }
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.project-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.project-item h3 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.project-item p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-item a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: #004999;
+}
+
 
 /* Contact Form */
 .contact-form {
